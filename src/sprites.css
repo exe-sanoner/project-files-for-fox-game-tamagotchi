@@ -24,6 +24,7 @@
 }
 
 .btn:active {
+  /* when you click */
   background-image: url(bg/BUTTONS/Selected.png);
 }
 
