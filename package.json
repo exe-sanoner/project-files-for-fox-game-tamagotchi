@@ -25,5 +25,8 @@
   },
   "browserslist": [
     "last 2 Chrome versions"
-  ]
+  ],
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
