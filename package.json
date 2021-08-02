@@ -1,9 +1,10 @@
 {
   "name": "project-files-for-fox-game-tamagotchi",
   "version": "1.0.0",
-  "description": "",
+  "description": "a digital pet game",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
     "dev": "parcel src/index.html",
     "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
     "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\"",
@@ -12,7 +13,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Exe Sanoner <exe.sanoner@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.31.0",
