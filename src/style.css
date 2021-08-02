@@ -83,8 +83,7 @@ body {
 }
 
 /* MODAL */
-
-.modal {
+.modal-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -106,7 +105,6 @@ body {
 }
 
 /* OUR FOX FRIEND 🦊 */
-
 .fox {
   position: absolute;
   top: 336px;

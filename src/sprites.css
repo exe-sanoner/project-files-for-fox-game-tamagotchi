@@ -252,6 +252,7 @@
 
 .game {
   background-image: url(./bg/DAY.png);
+  transition: all 3s ease;
 }
 
 .game.night {
@@ -260,6 +261,7 @@
 
 .game.dead {
   background-image: url(./bg/DEAD.png);
+  transition: all 3s ease;
 }
 
 .game.rain {
