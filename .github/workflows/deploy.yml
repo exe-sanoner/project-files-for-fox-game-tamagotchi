@@ -1,0 +1,23 @@
+name: Deploy Built Site to Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: npm install and build
+        working-directory: fox-game-tamagotchi
+        run: |
+          npm install
+          npm run build -- --public-url /fox-game-tamagotchi/
+      - name: Deploy site to gh-pages branch
+        uses: crazy-max/ghaction-github-pages@v1.4.0
+        env:
+          GITHUB_PAT: ${{ secrets.PAT }}
+        with:
+          build_dir: fox-game-tamagotchi/dist
