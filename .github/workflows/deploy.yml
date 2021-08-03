@@ -11,13 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: npm install and build
-        working-directory: fox-game-tamagotchi
+        working-directory: project-files-for-fox-game-tamagotchi
         run: |
           npm install
-          npm run build -- --public-url /fox-game-tamagotchi/
+          npm run build -- --public-url /project-files-for-fox-game-tamagotchi/
       - name: Deploy site to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v1.4.0
         env:
           GITHUB_PAT: ${{ secrets.PAT }}
         with:
-          build_dir: fox-game-tamagotchi/dist
+          build_dir: project-files-for-fox-game-tamagotchi/dist
