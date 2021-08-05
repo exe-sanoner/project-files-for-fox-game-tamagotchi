@@ -29,14 +29,14 @@ const gameState = {
       this.sleep();
     } else if (this.clock === this.hungryTime) {
       this.getHungry();
-    } else if (this.clock === this.dieTime) {
-      this.die();
     } else if (this.clock === this.timeToStartCelebrating) {
       this.startCelebrating();
     } else if (this.clock === this.timetoEndCelebrating) {
       this.endCelebrating();
     } else if (this.clock === this.poopTime) {
       this.poop();
+    } else if (this.clock === this.dieTime) {
+      this.die();
     }
     return this.clock;
   },
@@ -83,8 +83,8 @@ const gameState = {
   },
   poop() {
     this.current = "POOPING";
-    this.poopTime = -1;
     this.dieTime = getNextDieTime(this.clock);
+    this.poopTime = -1;
     modFox("pooping");
   },
   die() {
